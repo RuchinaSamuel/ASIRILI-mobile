@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asliri</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "1rem",
+            screens: {
+              sm: "640px",
+              md: "768px",
+              lg: "1024px",
+              xl: "1280px",
+              "2xl": "1416px",
+            },
+          },
+          extend: {
+            colors: {
+              primary: "#B80F0A", // Custom red used for button and highlight
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section>
+      <nav class="container py-4">
+        <div class="flex justify-between items-center">
+          <div class="">
+            <div class="w-[170px] h-[62px]">
+              <img src="./assets/logo.png" class="w-full h-full" />
+            </div>
+          </div>
+
+          <div class="hidden lg:flex items-center">
+            <ul
+              class="flex gap-[16px] justify-center font-poppins text-[16px] font-400 leading-[26px] text-[#000000]"
+            >
+              <li><a>Product & Solutions</a></li>
+              <li><a>Industries</a></li>
+              <li><a>Resources</a></li>
+              <li><a>Company</a></li>
+            </ul>
+          </div>
+
+          <div class="hidden lg:flex items-center gap-[10px] justify-end">
+            <a class="h-[26px] w-[26px]">
+              <img src="./assets/icons/Search icon.png" />
+            </a>
+
+            <div
+              class="w-[168px] h-[46px] bg-[#B80F0A] items-center flex justify-center rounded-[5px]"
+            >
+              <a
+                href=""
+                class="uppercase text-[#ffffff] text-[14px] font-poppins"
+              >
+                Request a demo
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="text-[#000000] text-[30px] lg:hidden cursor:pointer"
+            onclick="toggleMenu()"
+          >
+            <a><i class="fa fa-bars" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <!-- ................mobile hiddden menu....................... -->
+
+        <div id="mobileMenu" class="hidden flex-col gap-4 mt-4 lg:hidden">
+          <ul
+            class="flex flex-col gap-2 text-[16px] font-400 leading-[26px] text-[#000000]"
+          >
+            <li><a>Product & Solutions</a></li>
+            <li><a>Industries</a></li>
+            <li><a>Resources</a></li>
+            <li><a>Company</a></li>
+          </ul>
+
+          <div class="flex items-center gap-[10px] mt-4">
+            <a class="h-[26px] w-[26px]">
+              <img src="./assets/icons/Search icon.png" />
+            </a>
+
+            <div
+              class="w-[168px] h-[46px] bg-[#B80F0A] items-center flex justify-center rounded-[5px]"
+            >
+              <a
+                href=""
+                class="uppercase text-[#ffffff] text-[14px] font-poppins"
+              >
+                Request a demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- .................hero section........................ -->
+    <section
+      class="w-full bg-[url('./assets/heroimg.png')] bg-cover bg-top h-[471px] z-[99]"
+    >
+      <div class="container mx-auto py-20">
+        <div class="flex items-center gap-8">
+          <div class="flex items-center">
+            <a
+              class="bg-[#B80F0ACC] h-[30px] w-[30px] flex justify-center items-center rounded-full text-[#FFFFFF]"
+              ><i class="fa fa-angle-left" aria-hidden="true"></i
+            ></a>
+          </div>
+
+          <div class="">
+            <div class="w-[500px]">
+              <p
+                class="text:[16px] lg:text-[24px] leading-[25px] uppercase text-[#B80F0A] font-[700]"
+              >
+                why ASLI RI?
+              </p>
+              <h1
+                class="text-[40px] lg:text-[48px] leading-[58px] text-[#B80F0A] font-[700]"
+              >
+                BIOMETRIC EKYC <br />
+                SIMPLIFIED!
+              </h1>
+              <p
+                class="text-[#000000] text-[20px] font-[300] leading-[30px] pb-4"
+              >
+                We help companies manage <br />
+                and secure their digital <br />
+                transaction.
+              </p>
+            </div>
+
+            <div
+              class="w-[168px] h-[46px] bg-[#B80F0A] items-center flex justify-center rounded-[5px]"
+            >
+              <a
+                href=""
+                class="uppercase text-[#ffffff] text-[14px] font-poppins"
+              >
+                Request a demo
+              </a>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-end">
+            <a
+              class="bg-[#B80F0ACC] h-[30px] w-[30px] flex justify-center items-center rounded-full text-[#FFFFFF]"
+              ><i class="fa fa-angle-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- .......................partners........................... -->
+    <section>
+      <div class="container mx-auto py-20">
+        <div
+          class="flex flex-col items-center gap-20 lg:flex-row items-center lg:gap-40"
+        >
+          <div class="relative w-full lg:w-[40%]">
+            <div class="">
+              <img src="./assets/Frame 38182.png" />
+            </div>
+            <div
+              class="top-6 absolute left-0 w-full h-full flex flex-col justify-center px-6 z-10 lg:top-10"
+            >
+              <h2 class="text-[24px] leading-[24px] font-700 text-[#B80F0A]">
+                Our Valuable Partners
+              </h2>
+              <p
+                class="text-[17px] leading-[30px] font-[600] text-[#999999] pt-2"
+              >
+                All successful growing business is built on partnership and
+                friendship.
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg: w-[60%]">
+            <div class="flex items-center gap-10">
+              <div class="w-[80px] h-[50px]">
+                <img
+                  src="./assets/icons/9bbaa4639acf25ccc0d7231fd3d0cde02b780a01.png"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="w-[80px] h-[50px]">
+                <img
+                  src="./assets/icons/328e0cb9405eb48ce0224110d889095af4a2e612.png"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="w-[80px] h-[50px]">
+                <img
+                  src="./assets/icons/ddaa57ece99b3ada5810b587ea09377bf8b66150.png"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="w-[80px] h-[50px]">
+                <img
+                  src="./assets/icons/4f9129e6fb754c5eabeb53950d16a16ef63e0955.png"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="w-[80px] h-[50px]">
+                <img
+                  src="./assets/icons/3c5c408961aa27aa1a7f093b64cc2d78bf640705.png"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="w-[80px] h-[50px]">
+                <img
+                  src="./assets/icons/ec4017dab3295d720fb57e4e3ae64d8956c6a37e.png"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+
+              <div class="w-[80px] h-[50px]">
+                <img
+                  src="./assets/icons/4ebdcf8860a668b76929dd7d726e22050e5bb160 (1).png"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- .....................products............................. -->
+    <section class="py-20">
+      <div class="container mx-auto">
+        <div
+          class="hidden md:absolute md:left-[1300px] md:-mt-[40px] md:flex justify-end"
+        >
+          <div class="h-[266px] w-[137px] overflow-hidden">
+            <img src="./assets/img1.png" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-10 relative">
+          <div class="flex flex-col items-center">
+            <div
+              class="bg-[#B80F0A] text-white relative h-[62px] w-[186px] flex justify-center items-center"
+            >
+              <p class="uppercase text-[24px] leading-[36px] font-600">
+                products
+              </p>
+            </div>
+
+            <div
+              class="flex items-center justify-center -mt-[4px] text-[#B80F0A]"
+            >
+              <i class="fa fa-play rotate-90" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <p class="uppercase text-[#B80F0A] text-[24px] leading-[36px]">
+              Solutions
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex absolute left-[-200px] overflow-hidden mt-[400px]">
+        <div class="w-[880px] h-[880px]"><img src="./assets/img2.png" /></div>
+      </div>
+
+      <div class="container mx-auto relative">
+        <div class="flex items-center justify-center text-center p-2 mb-[82px]">
+          <p
+            class="text-sm md:text-[18px] text-[#0C1B4D99] leading-[28px] font-[400]"
+          >
+            ASLI RI provides A wide range of solutions biometric for
+            Frictionless authentication, verification, and tools built to scale.
+            A specially
+            <br />
+            crafted for your digital needs :
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
