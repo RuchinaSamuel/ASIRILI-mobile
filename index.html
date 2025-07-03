@@ -113,11 +113,11 @@
 
     <!-- .................hero section........................ -->
     <section
-      class="w-[400px] md:w-full bg-[url('./assets/heroimg.png')] bg-cover bg-top h-[471px] z-[99]"
+      class="w-full bg-[url('./assets/heroimg.png')] bg-cover bg-top h-[300px] sm:h-[400px] md:h-[471px] lg:h-[600px] z-[99]"
     >
       <div class="container mx-auto py-20">
         <div class="flex items-center gap-8">
-          <div class="flex items-center">
+          <div class="hidden lg:flex lg:items-center">
             <a
               class="bg-[#B80F0ACC] h-[30px] w-[30px] flex justify-center items-center rounded-full text-[#FFFFFF]"
               ><i class="fa fa-angle-left" aria-hidden="true"></i
@@ -158,7 +158,7 @@
             </div>
           </div>
 
-          <div class="w-full flex justify-end">
+          <div class="hidden lg:w-full lg:flex justify-end">
             <a
               class="bg-[#B80F0ACC] h-[30px] w-[30px] flex justify-center items-center rounded-full text-[#FFFFFF]"
               ><i class="fa fa-angle-right" aria-hidden="true"></i
@@ -193,50 +193,50 @@
             </div>
           </div>
           <div class="w-full lg: w-[60%]">
-            <div class="flex items-center gap-10">
-              <div class="w-[80px] h-[50px]">
+            <div class="gap-4 flex items-center lg:gap-10">
+              <div class="w-[100px] h-[80px] lg:w-[80px] lg:h-[50px]">
                 <img
                   src="./assets/icons/9bbaa4639acf25ccc0d7231fd3d0cde02b780a01.png"
                   class="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="w-[80px] h-[50px]">
+              <div class="w-[100px] h-[80px] lg:w-[80px] lg:h-[50px]">
                 <img
                   src="./assets/icons/328e0cb9405eb48ce0224110d889095af4a2e612.png"
                   class="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="w-[80px] h-[50px]">
+              <div class="w-[100px] h-[80px] lg:w-[80px] lg:h-[50px]">
                 <img
                   src="./assets/icons/ddaa57ece99b3ada5810b587ea09377bf8b66150.png"
                   class="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="w-[80px] h-[50px]">
+              <div class="w-[100px] h-[80px] lg:w-[80px] lg:h-[50px]">
                 <img
                   src="./assets/icons/4f9129e6fb754c5eabeb53950d16a16ef63e0955.png"
                   class="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="w-[80px] h-[50px]">
+              <div class="w-[100px] h-[80px] lg:w-[80px] lg:h-[50px]">
                 <img
                   src="./assets/icons/3c5c408961aa27aa1a7f093b64cc2d78bf640705.png"
                   class="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="w-[80px] h-[50px]">
+              <div class="w-[100px] h-[80px] lg:w-[80px] lg:h-[50px]">
                 <img
                   src="./assets/icons/ec4017dab3295d720fb57e4e3ae64d8956c6a37e.png"
                   class="w-full h-full object-contain"
                 />
               </div>
 
-              <div class="w-[80px] h-[50px]">
+              <div class="w-[100px] h-[80px] lg:w-[80px] lg:h-[50px]">
                 <img
                   src="./assets/icons/4ebdcf8860a668b76929dd7d726e22050e5bb160 (1).png"
                   class="w-full h-full object-contain"
@@ -249,7 +249,7 @@
     </section>
 
     <!-- .....................products............................. -->
-    <section class="py-20">
+    <section class="py-10 lg:py-20">
       <div class="container mx-auto">
         <div
           class="hidden md:absolute md:left-[1300px] md:-mt-[40px] md:flex justify-end"
@@ -262,9 +262,11 @@
         <div class="flex items-center justify-center gap-10 relative">
           <div class="flex flex-col items-center">
             <div
-              class="bg-[#B80F0A] text-white relative h-[62px] w-[186px] flex justify-center items-center"
+              class="h-[40px] w-[120px] bg-[#B80F0A] text-white relative lg:h-[62px] lg:w-[186px] flex justify-center items-center"
             >
-              <p class="uppercase text-[24px] leading-[36px] font-600">
+              <p
+                class="text-[18px] uppercase lg:text-[24px] leading-[36px] font-600"
+              >
                 products
               </p>
             </div>
@@ -277,7 +279,9 @@
           </div>
 
           <div class="flex items-center">
-            <p class="uppercase text-[#B80F0A] text-[24px] leading-[36px]">
+            <p
+              class="text-[18px] uppercase text-[#B80F0A] lg:text-[24px] leading-[36px]"
+            >
               Solutions
             </p>
           </div>
